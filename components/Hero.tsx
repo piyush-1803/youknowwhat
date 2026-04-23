@@ -12,13 +12,10 @@ const Hero = () => {
         <div className="glass p-12 rounded-3xl border border-white/10 shadow-2xl backdrop-blur-2xl">
           <div className="profile-image-container float-animation">
             <div className="profile-image-wrapper">
-              <Image 
+              <img 
                 src="/profile.jpg" 
                 alt="Piyush" 
-                width={300} 
-                height={300} 
                 className="profile-image"
-                priority
               />
             </div>
           </div>
