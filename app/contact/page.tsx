@@ -1,9 +1,9 @@
 export default function ContactPage() {
   const socialLinks = [
-    { name: 'Email', value: 'hello@example.com', href: 'mailto:hello@example.com', icon: '✉️' },
-    { name: 'GitHub', value: 'github.com/piyush', href: 'https://github.com', icon: '💻' },
-    { name: 'Twitter/X', value: '@piyush_ai', href: 'https://twitter.com', icon: '🐦' },
-    { name: 'LinkedIn', value: 'linkedin.com/in/piyush', href: 'https://linkedin.com', icon: '🔗' },
+    { name: 'GitHub', value: 'github.com/piyush-1803', href: 'https://github.com/piyush-1803', icon: '💻' },
+    { name: 'X (Twitter)', value: '@Amritam1801', href: 'https://x.com/Amritam1801', icon: '🐦' },
+    { name: 'Instagram', value: '@akashic.x', href: 'https://www.instagram.com/akashic.x/', icon: '📸' },
+    { name: 'Email', value: 'youknowwhat1803@gmail.com', href: 'mailto:youknowwhat1803@gmail.com', icon: '✉️' },
   ];
 
   return (

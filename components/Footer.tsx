@@ -12,7 +12,7 @@ const Footer = () => {
         
         <div className="flex space-x-6">
           <a 
-            href="https://github.com" 
+            href="https://github.com/piyush-1803" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-white/60 hover:text-accent-1 transition-colors text-sm"
@@ -20,15 +20,25 @@ const Footer = () => {
             GitHub
           </a>
           <a 
-            href="https://twitter.com" 
+            href="https://x.com/Amritam1801" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-white/60 hover:text-accent-2 transition-colors text-sm"
           >
-            Twitter/X
+            X (Twitter)
           </a>
           <a 
-            href="mailto:hello@example.com" 
+            href="https://www.instagram.com/akashic.x/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white/60 hover:text-accent-1 transition-colors text-sm"
+          >
+            Instagram
+          </a>
+          <a 
+            href="mailto:youknowwhat1803@gmail.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="text-white/60 hover:text-accent-1 transition-colors text-sm"
           >
             Email

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -9,6 +10,19 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-4xl px-6 text-center">
         <div className="glass p-12 rounded-3xl border border-white/10 shadow-2xl backdrop-blur-2xl">
+          <div className="profile-image-container float-animation">
+            <div className="profile-image-wrapper">
+              <Image 
+                src="/profile.jpg" 
+                alt="Piyush" 
+                width={300} 
+                height={300} 
+                className="profile-image"
+                priority
+              />
+            </div>
+          </div>
+          
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
             I'm <span className="bg-gradient-to-r from-accent-1 via-accent-2 to-accent-1 bg-clip-text text-transparent animate-gradient">Piyush</span>
           </h1>
