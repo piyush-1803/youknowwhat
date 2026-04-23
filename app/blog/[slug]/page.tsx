@@ -14,7 +14,7 @@ export default function BlogDetailPage() {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const res = await fetch(`/api/blog/${slug}`);
+        const res = await fetch(`/api/blog/slug/${slug}`);
         if (!res.ok) throw new Error('Post not found');
         const data = await res.json();
         

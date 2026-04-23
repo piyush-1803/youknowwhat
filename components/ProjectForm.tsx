@@ -27,7 +27,7 @@ const ProjectForm = ({ initialData, isEditing = false }: ProjectFormProps) => {
 
     const payload = {
       ...formData,
-      tags: formData.tags.split(',').map(tag => tag.trim()).filter(tag => tag !== ''),
+      tags: formData.tags.split(',').map((tag: string) => tag.trim()).filter((tag: string) => tag !== ''),
     };
 
     try {
