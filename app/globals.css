@@ -1,26 +1,121 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --accent-1: #00d9ff;
+  --accent-2: #ff006e;
+  --card-bg: #1a1a1a;
+  --card-border: #333333;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-accent-1: var(--accent-1);
+  --color-accent-2: var(--accent-2);
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer utilities {
+  .animate-gradient {
+    background-size: 200% auto;
+    animation: gradient 3s linear infinite;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+  }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* Markdown Typography */
+.prose {
+  max-width: 100%;
+}
+.prose h1, .prose h2, .prose h3 {
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.prose h1 { font-size: 2.25rem; border-bottom: 2px solid var(--accent-1); padding-bottom: 0.5rem; }
+.prose h2 { font-size: 1.875rem; color: var(--accent-1); }
+.prose h3 { font-size: 1.5rem; }
+
+.prose p {
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.prose a {
+  color: var(--accent-1);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.prose pre {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin: 2rem 0;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.prose code {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.875rem;
+  color: var(--accent-2);
+}
+
+.prose ul, .prose ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.prose li { margin-bottom: 0.5rem; }
+
+.prose blockquote {
+  border-left: 4px solid var(--accent-1);
+  padding-left: 1.5rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 2rem 0;
 }
