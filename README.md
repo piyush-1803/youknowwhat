@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# YouKnowWhat
 
-## Getting Started
+A personal portfolio and digital journey space.
 
-First, run the development server:
+YouKnowWhat is more than a portfolio website — it is a reflection of ideas, growth, creativity, ambition, and transformation.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The platform showcases projects, thoughts, experiments, and the evolving journey of becoming a creator, inventor, and builder.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Live Website
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+https://youknowwhat.vercel.app/
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## About
 
-## Learn More
+This website acts as:
 
-To learn more about Next.js, take a look at the following resources:
+- A personal portfolio
+- A project showcase
+- A digital identity
+- A space to document growth and ideas
+- A reflection of vision, philosophy, and creativity
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Current Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Portfolio landing page
+- Personal journey section
+- Project showcase
+- Clean modern UI
+- Responsive design
+- Fast deployment with Vercel
 
-## Deploy on Vercel
+## Upcoming Updates
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- More project showcases
+- Interactive animations
+- Blog/articles section
+- Research and invention logs
+- Philosophy and thought space
+- Better storytelling experience
+- Full redesign and optimization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Vision
+
+The goal of YouKnowWhat is to create a space that represents not just skills, but evolution.
+
+A place where technology, philosophy, creativity, and personal transformation merge together.
+
+## Tech Stack
+
+- React
+- Tailwind CSS
+- JavaScript
+- Vercel
+
+## Status
+
+Work in progress — continuously evolving.
+
+## Author
+
+Created by Piyush.
